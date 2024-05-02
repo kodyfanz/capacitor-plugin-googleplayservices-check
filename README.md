@@ -13,24 +13,20 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`checkAvailability()`](#checkavailability)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### checkAvailability()
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+checkAvailability() => Promise<{ available: boolean; version?: number; error?: string; errorCode?: number; }>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
-
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ available: boolean; version?: number; error?: string; errorCode?: number; }&gt;</code>
 
 --------------------
 

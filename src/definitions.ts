@@ -1,3 +1,3 @@
 export interface GooglePlayServicesCheckPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  checkAvailability(): Promise<{ available: boolean; version?: number, error?: string; errorCode?: number }>;
 }
